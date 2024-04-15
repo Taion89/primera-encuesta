@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de encuesta</title>
+</head>
+
+<body>
+  <div class="ejemplo1">
+    <div class="formulario">
+      <h1 id="title">Formulario de encuesta</h1>
+      <p id="description">¡Le agradecemos por completar nuestro formulario, nos ayuda mucho para seguir creciendo!</p>
+      <hr>
+    </div>
+    <div class="form">
+      <form id="survey-form">
+        <div class="form-control">
+          <label id="name-label" for="name">Nombre completo</label>
+          <input class="prueba" placeholder="Introduzca su nombre completo" name="name-complete" id="name" type="text" required><br>
+        </div>
+        <div class="form-control">
+          <label id="email-label" for="email">Correo electrónico</label>
+          <input class="prueba" placeholder="Introduzca su correo electrónico" name="email" id="email" type="email" required><br>
+        </div>
+
+        <div class="form-control">
+          <label id="number-label" for="number">Edad</label>
+          <input class="prueba" min="13" max="110" placeholder="Introduzca su edad" name="number" id="number" type="number"><br>
+        </div>
+
+        <div class="form-control">
+          <label for="ocupacion">Ocupación actual</label>
+          <select id="dropdown" name="ocupacion">
+            <option value="">Seleccione una opción</option>
+            <option value="1">Empleado en relación de dependencia</option>
+            <option value="2">Monotributista</option>
+            <option value="3">Desocupado</option>
+            <option value="4">Estudiante</option>
+            <option value="5">Otro</option>
+          </select>
+          <br>
+        </div>
+
+        <div class="form-control">
+          <label for="educacion">Máximo nivel de estudios alcanzado</label>
+          <select id="dropdown-educacion" name="educacion">
+            <option value="">Seleccione una opción</option>
+            <option value="1">Primario</option>
+            <option value="2">Secundario</option>
+            <option value="3">Terciario</option>
+            <option value="4">Universitario</option>
+            <option value="5">Posgrado</option>
+            <option value="6">Ninguno</option>
+          </select>
+          <br>
+        </div>
+        <div class="form-control">
+            <label class="recomendaciones">¿Cree que nuestra página web es recomendable?</label>
+            <label><input class="input-radio" value="recomendable" type="radio" name="recomendacion" checked>Es muy recomendable</label>
+            <label><input class="input-radio" value="algo-recomendable" type="radio" name="recomendacion">Es algo recomendable</label>
+            <label><input class="input-radio" value="no-recomendable" type="radio" name="recomendacion">No es recomendable</label>
+          </div>
+        <div class="form-control">
+          <label class="gustos">¿Qué fue lo que más le gustó de la página?</label>
+          <label><input class="input-radio checkbox" type="checkbox" value="diseño" checked>Diseño/estilo</label><br>
+          <label><input class="input-radio" type="checkbox" value="proyectos">Proyectos</label><br>
+          <label><input class="input-radio" type="checkbox" value="comunidad">Comunidad</label><br>
+          <label><input class="input-radio" type="checkbox" value="organización">Organización</label><br>
+          <label><input class="input-radio" type="checkbox" value="información">Fuentes de información</label><br>
+        </div>
+        <div class="form-control">
+          <label for="conocer">¿Cómo supo de nosotros?</label>
+          <select id="dropdown-conocer" name="conocer">
+            <option value="">Seleccione una opción</option>
+            <option value="1">Redes sociales</option>
+            <option value="2">Publicidad en TV</option>
+            <option value="3">Familiares o conocidos</option>
+            <option value="4">Página web</option>
+            <option value="5">Otro</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label class="sugerencia" for="sugerencia">¿Se le ocurre alguna sugerencia que nos sirva para mejorar?</label>
+          <textarea id="sugerencia" name="cambios" rows="3" cols="60"
+            placeholder="El diseño de la página lo cambiaría por..."></textarea>
+        </div>
+        <div class="form-control">
+          <input type="submit" id="submit" class="submit-button">
+        </div>
+    </div>
+
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
